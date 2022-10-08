@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yêu Hay Không Yêu</title>
+</head>
+<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	body{
+		 font-family:"Helvetica Neue",Helvetica,Arial, Sans-serif;
+	}
+	h1{
+		width: 500px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 50px;
+    overflow: hidden;
+    padding: 50px;
+    text-align: center;
+    color: white;
+	}
+	.container{
+		background-image: url(https://lazi.vn/uploads/users/avatar/1515736190_ytrai_tim.jpg);
+		height: 600px;
+	}
+	.hi{
+		width: 60%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+	}
+	.yeu	 {
+			width: 165px;
+    height: 55px;
+    background: blueviolet;
+    text-align: center;
+    line-height: 52px;
+    font-size: 30px;
+	}
+    .kyeu{
+    width: 165px !important;
+    height: 55px !important;
+    background: blueviolet;
+    text-align: center;
+    line-height: 52px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    }
+    .kyeu a{
+    	text-decoration: none;
+    	color: black;
+    }
+	.kyeu a:first-child{
+		display: none;
+		text-decoration: none;
+    color: black;
+	}
+	.kyeu:hover a:first-child {
+		display: block;
+	}
+	.kyeu:hover a:last-child {
+		display: none;
+	}
+</style>
+<body>
+	<div class="container">
+		<h1>Yêu mình không</h1>
+		<div class="hi">
+			<div class="yeu">Yêu</div>
+			<div class="kyeu">
+				<a href="#">Yêu</a>
+				<a href="#">Không Yêu</a>
+			</div>
+			<div class="yeu">Yêu luôn</div>
+		</div>
+	</div>
+</body>
+</html>

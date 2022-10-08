@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="vi">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=deveci-width, initial-scale=1">
+	<script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://bloggiaovienthaibinh.110mb.com/anh2/jquery.magnifier.js"></script>
+	<title>CHI TIẾT SẢN PHẨM</title>
+	<link rel="stylesheet" type="text/css" href="tmdt.css">
+	<link rel="stylesheet" type="text/css" href="update.js">
+	<link rel="stylesheet" type="text/css" href="function.php">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://nguyenvandinh.com/Content/template/ANThanhs/js/jquery-2.1.4.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/btn_top.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="container">
+		<div class="Information">
+			<div class="home">
+				<i class="fa fa-home"></i>HOME: 9/142/322-Mỹ Đình-Nam Từ Liêm-Hà Nội
+			</div>
+			<div class="work_time">
+				<i class="fa fa-key"></i> Open: 7h30AM to 7PM
+			</div>
+			<div class="sms">
+				<i class="fa fa-comment"></i>trungducbuic4k56@gmail.com
+			</div>
+			<div class="login">
+				<button class="login_bt" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-arrow-right" ></i>Login</button>
+				<div id="id01" class="modal">
+  
+  					<form class="modal-content animate" action="/action_page.php" method="post">
+    					<div class="imglogin1">
+     						 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     						 <img src="img/logo.png" alt="Avatar" class="avatar">
+    					</div>
+   						 <div class="login1">
+      						<label class="login_b" for="uname"><b>Username</b></label>
+      						<input class="login1_ip"  type="text" placeholder="Enter Username" name="uname" required>
+
+      						<label class="login_b"  for="psw"><b>Password</b></label>
+      						<input class="login1_ip" type="password" placeholder="Enter Password" name="psw" required>
+        
+      						<button class="lg" type="submit">Login</button>
+      						<label id="fix-text">
+        						<input type="checkbox" checked="checked" name="remember" > Remember me
+      						</label>
+    					</div>
+
+   						 <div class="login1" style="background-color:#f1f1f1">
+      						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      						<span class="psw">Forgot <a href="#">password?</a></span>
+    					</div>
+  					</form>
+				</div>
+
+			<script>
+				var modal = document.getElementById('id01');
+				window.onclick = function(event) {
+   				 if (event.target == modal) {
+       			 modal.style.display = "none";
+    				}
+				}
+			</script>
+		</div>
+		</div>
+		<div id="header">
+			<div class="header_top">
+				<div class="header_logo"><img  src="img/logo.png" style="    width: 65px;margin-top: 5px;">
+				</div>
+				<div class="sum_header">
+					<div class="Call">
+						<div class="icon_phone"><i class="fa fa-phone"></i></div>
+						<p>Call Us <a herf="0853798492" target="_parent">0853798492</a></p>
+					</div>
+					<div class="Call sub_cart">
+						<div class="item_cart">
+							<p><a href="">Giỏ Hàng / 0đ</a></p>
+							<div class="icon_cart"><a href=""><i class="fa fa-shopping-cart"></i></a></div>
+							<div class="content_cart">
+								<h5>Chưa có sản phẩm nào trong giỏ hàng</h5>
+							</div>
+						</div>
+						
+					</div>
+					<div class="icon_search">
+						<a href=""><i class="fa fa-search"></i></a>
+						<div  class="search_menu">
+							<ul>
+								<li>
+									<div class="form">
+										<form>
+											<input type="text" name="search" placeholder="tìm kiếm">
+											<div class="sub_search"><a href=""><i class="fa fa-search"></i></a></div>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id ="menu">
+				<ul class="menu_pc">
+					<li><a href="index.html">TRANG CHỦ</a></li>
+					<li><a href="introduce.html">GIỚI THIỆU</a></li>
+					<li class="li_pc" style="position: relative; vertical-align: top;"><a href="store.html">CỬA HÀNG <i class="fa fa-chevron-down"></i>
+						<ul class="sub_menu">
+							<li><a href="cart.html">GIỎ HÀNG</a></li>
+							<li><a href="pay.html">THANH TOÁN</a></li>
+							<li><a href="checkorder.html">KIỂM TRA</a></li>
+						</ul>
+					</a>
+					</li>
+					<li><a href="newsfeed.html">TIN TỨC</a></li>
+					<li><a href="contact.html">LIÊN HỆ</a></li>
+				</ul>
+				<label  for="nav-mobie-input" class="bars-btn"><i class="fa fa-bars"></i></label>
+				<input type="checkbox" name="" hidden="" id="nav-mobie-input">
+				<label  for="nav-mobie-input" class="over_lay"></label>
+				<nav class="menu_mobie" style="display: none;">
+					<ul style="text-decoration: none;list-style-type: none;">
+						<li>
+							<div class="form">
+								<form>
+									<input type="text" name="search" placeholder="tìm kiếm">
+									<div class="sub_search">
+										<a href=""><i class="fa fa-search"></i></a>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li><a href="index.html">TRANG CHỦ</a></li>
+						<li><a href="introduce.html">GIỚI THIỆU</a></li>
+						<li >
+							 <div class="submenu_repon"><a href="store.html">CỬA HÀNG</a> &ensp;</div>
+							 <label for="submenu_check_ip" class="btn_arow" style="font-size: 24px;"><i style="width: 35px;text-align: center;" class="fa fa-caret-down"></i></label>
+							 <input type="checkbox" name="" class="ip_mobie" id="submenu_check_ip" style="display: none;">
+							 <ul class="media_submenu fix_dis">
+							 	<li><a href="cart.html">&ensp;&ensp;GIỎ HÀNG</a></li>
+							 	<li><a href="pay.html">&ensp;&ensp;THANH TOÁN</a></li>
+							 	<li><a href="checkorder.html">&ensp;&ensp;KIỂM TRA</a></li>
+							 </ul>
+						</li>
+						<li><a href="newsfeed.html">TIN TỨC</a></li>
+						<li><a href="contact.html">LIÊN HỆ</a></li>
+					</ul>
+					<label  for="nav-mobie-input" class="time"><i class="fa fa-times"></i></label>
+				</nav>
+				<div class="header_logo_mb"><img src="img/logo.png" style="width: 65px; height: 60px;"></div>
+				<nav class="icon_cart media_cart" style="display: none;">
+					<label  for="nav-mobie-cart" class="media_check"><i class="fa fa-shopping-cart"></i></label>
+					<input type="checkbox" name="" hidden="" id="nav-mobie-cart">
+					<label  for="nav-mobie-cart" class="over_lay"></label>
+					<div class="cart_mb" style="display: none;">
+						<div class="sub_cart_mb">
+							<label  for="nav-mobie-cart" class="time"><i class="fa fa-times"></i></label>
+							<h1>Giỏ Hàng</h1>
+						</div>
+						<p>Bạn chưa có sản phẩm nào.</p>
+					</div>
+					
+				</nav>
+			</div>
+			
+		</div>
+		<div class="offer_sum">
+			<div class="offer">
+				<div class="pr_product option_product">
+					<h1>Sản Phẩm</h1>
+					<div class="product-details">
+						<img src="img/bongchuyen.png">
+						<div class="sub_details">
+							<h3><a href="">Bóng chuyền hơi</a></h3>
+							<p><strike>500.000đ</strike> 499.000đ</p>
+						</div>
+					</div>
+					<div class="product-details">
+						<img src="img/bongchuyen.png">
+						<div class="sub_details">
+							<h3><a href="">Bóng chuyền hơi</a></h3>
+							<p><strike>500.000đ</strike> 499.000đ</p>
+						</div>
+					</div>
+					<div class="product-details">
+						<img src="img/bongchuyen.png">
+						<div class="sub_details">
+							<h3><a href="">Bóng chuyền hơi</a></h3>
+							<p><strike>500.000đ</strike> 499.000đ</p>
+						</div>
+					</div>
+					<div class="product-details">
+						<img src="img/bongchuyen.png">
+						<div class="sub_details">
+							<h3><a href="">Bóng chuyền hơi</a></h3>
+							<p><strike>500.000đ</strike> 499.000đ</p>
+						</div>
+					</div>
+				</div>
+				<div class="new_product option_product">
+					<h1>Mới nhất</h1>
+					<div class="product-details">
+						<img src="img/bongchuyen.png">
+						<p><a href="#">Lịch đánh bóng chuyền toàn quốc</a></p>
+					</div>
+					<div class="product-details">
+						<img src="img/bongchuyen.png">
+						<p><a href="#">các giải đấu do chúng tôi tổ chức</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="detail">
+				<div class="detail_top">
+				<div class="detail_img">
+					<img src="img/bongchuyen.png">
+				</div>
+				<div class="detail_text">
+					<h2><a herf="index.htmk">TRANG CHỦ</a> / DEMO</h2>
+					<h1>Bóng chuyền Thăng Long 7400</h1>
+					<div class="Gray"></div>
+					<h3>198.000đ - 200.000đ</h3>
+					<p> <b>🏐️🏐️🏐 THÔNG TIN QUẢ BÓNG CHUYỀN DA THĂNG LONG</b><br>
+							&ensp;◈ Thương hiệu : THĂNG LONG<br>
+							&ensp;◈ Tiêu chuẩn : Thi đấu<br>
+							&ensp;◈ Màu sắc : Vàng - Xanh - Trắng<br>
+							&ensp;◈ Quà tặng : 01 Bơm tay + 01 Túi lưới + 02 Kim bơm<br>
+						---------------------------------------------------<br>
+						<b>🏐️🏐️🏐 THÔNG SỐ KỸ THUẬT QUẢ BÓNG CHUYỀN DA THĂNG LONG</b><br>
+							&ensp;♢ Chất liệu : Da PU <br>
+							&ensp;♢ Chu vi : 650 – 670 mm<br>
+							&ensp;♢ Trọng Lượng : 260 – 280 gram<br>
+							&ensp;♢ Áp Lực : 3 – 3.25 N/cm2<br>
+							&ensp;♢ Kích thước tiêu chuẩn phù hợp với mọi lứa tuổi.<br>
+						---------------------------------------------------<br>
+						<b>🏐️🏐️🏐 CẤU TẠO CHI TIẾT QUẢ BÓNG CHUYỀN DA THĂNG LONG </b><br>
+							&ensp;♦ Da được làm từ chất liệu PU cao cấp có độ bền và độ đàn hồi cao<br>
+							&ensp;♦ Bề mặt da mềm, độ bám dính tốt giúp bạn dễ dàng hơn trong tập luyện và thi đấu<br>
+							&ensp;♦ Mặt trong được bổ sung thêm lớp vải đệm giúp bóng luôn giữ form chuẩn<br>
+							&ensp;♦ Ruột và van bóng làm từ cao su đặc biệt có khả năng giữ hơi rất tốt.<br>
+						</p>
+						<div class="Selection">
+							<p>Seri bóng</p>
+							<div class="select_fix">
+							<select>
+								<option>Chọn 1 tùy chọn</option>
+								<option>TL 200</option>
+								<option>TL 240M3</option>
+								<option>TL 210M3</option>
+							</select>
+						</div>
+						</div>
+						<div class="Selection">
+							<p>Size</p>
+							<div class="select_fix">
+							<select>
+								<option>Chọn 1 tùy chọn</option>
+								<option>to</option>
+								<option>Trung Bình</option>
+								<option>Nhỏ	</option>
+							</select>
+							</div>
+						</div>
+						<div class="amount">
+							<h1>Số Lượng</h1>
+							<div class="buttons_added">
+  								<input class="minus is-form" type="button" value="-">
+  								<input aria-label="quantity" class="input-qty" max="999" min="1" name="" type="number" value="1">
+  								<input class="plus is-form" type="button" value="+">
+							</div>
+							<script type="text/javascript" language="javascript">
+								$('input.input-qty').each(function() {
+  								var $this = $(this),
+    								qty = $this.parent().find('.is-form'),
+    								min = Number($this.attr('min')),
+    								max = Number($this.attr('max'))
+  								if (min == 0) {
+    								var d = 0
+  								} else d = min
+  								$(qty).on('click', function() {
+    								if ($(this).hasClass('minus')) {
+      								if (d > min) d += -1
+    								} else if ($(this).hasClass('plus')) {
+      								var x = Number($this.val()) + 1
+      								if (x <= max) d += 1
+    								}							
+    								$this.attr('value', d).val(d)
+  								})
+								})						
+							</script>
+						</div>
+						<div class="cart fix-media fix-pro"><a href="">Mua Hàng</a></div>
+						<p class="media_p_info" style="display: none;"> <b>🏐️🏐️🏐 THÔNG TIN QUẢ BÓNG CHUYỀN DA THĂNG LONG</b><br>
+							&ensp;◈ Thương hiệu : THĂNG LONG<br>
+							&ensp;◈ Tiêu chuẩn : Thi đấu<br>
+							&ensp;◈ Màu sắc : Vàng - Xanh - Trắng<br>
+							&ensp;◈ Quà tặng : 01 Bơm tay + 01 Túi lưới + 02 Kim bơm<br>
+						---------------------------------------------------<br>
+						<b>🏐️🏐️🏐 THÔNG SỐ KỸ THUẬT QUẢ BÓNG CHUYỀN DA THĂNG LONG</b><br>
+							&ensp;♢ Chất liệu : Da PU <br>
+							&ensp;♢ Chu vi : 650 – 670 mm<br>
+							&ensp;♢ Trọng Lượng : 260 – 280 gram<br>
+							&ensp;♢ Áp Lực : 3 – 3.25 N/cm2<br>
+							&ensp;♢ Kích thước tiêu chuẩn phù hợp với mọi lứa tuổi.<br>
+						---------------------------------------------------<br>
+						<b>🏐️🏐️🏐 CẤU TẠO CHI TIẾT QUẢ BÓNG CHUYỀN DA THĂNG LONG </b><br>
+							&ensp;♦ Da được làm từ chất liệu PU cao cấp có độ bền và độ đàn hồi cao<br>
+							&ensp;♦ Bề mặt da mềm, độ bám dính tốt giúp bạn dễ dàng hơn trong tập luyện và thi đấu<br>
+							&ensp;♦ Mặt trong được bổ sung thêm lớp vải đệm giúp bóng luôn giữ form chuẩn<br>
+							&ensp;♦ Ruột và van bóng làm từ cao su đặc biệt có khả năng giữ hơi rất tốt.<br>
+						</p>
+				</div>
+			</div>
+				<div class="relate_to">
+					<h1>Sản phẩm liên quan</h1>
+					<div class="ralate_three">
+						<div class="product_2 fix-category media_category fix_pro media_info">
+					<div class="sub_product fix-sub img_media">
+						<img  class="fix-store" src="img/tl6600.png">
+						<h4>Bóng chuyền</h4>
+						<p>Thăng long 6600</p>
+						<h3>$175.000</h3>
+						<div class="cart fix-media"><a href="">Giỏ hàng</a></div>
+					</div>
+				</div>
+				<div class="product_2 fix-category media_category fix_pro media_info">
+					<div class="sub_product fix-sub img_media">
+						<img  class="fix-store" src="img/tl7000.jpg">
+						<h4>Bóng chuyền</h4>
+						<p>Thăng long 7000</p>
+						<h3>$210.000</h3>
+						<div class="cart fix-media"><a href="">Giỏ hàng</a></div>
+					</div>
+				</div>
+				<div class="product_2 fix-category media_category fix_pro media_info">
+					<div class="sub_product fix-sub img_media">
+						<img class="fix-store" src="img/tl7700.png">
+						<h4>Bóng chuyền</h4>
+						<p>Thăng long 7700</p>
+						<h3>$186.000</h3>
+						<div class="cart fix-media"><a href="">Giỏ hàng</a></div>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="email_logo">
+				<div class="logo"><img src="img/logo.png" style="    width: 65px;margin-top: 5px;"></div>
+				<p>Đăng kí để nhận được thông tin mới nhất từ chúng tôi</p>
+				<div class="emial">
+					<input type="email" name="email" placeholder="Email...">
+					<a href="#"><i class="fa fa-location-arrow"></i></a>
+				</div>
+			</div>
+			<div class="contact">
+				<h1>Liên hệ</h1>
+				<ul>
+					<li><i class="fa fa-map-marker"></i> 9/142/322 Nhân Mỹ - Mỹ Đình - Nam Từ Liêm - Hà Nội</li>
+					<li><a href=""><i class="fa fa-map-marker"></i> 0853798492</a></li>
+					<li><i class="fa fa-comment"></i> trungducbui c4k56@gmail.com</li>
+					<li><i class="fa fa-comment"></i> ducthanhpro01</li>
+				</ul>
+			</div>
+			<div class="support">
+				<h1>Hỗ trợ</h1>
+				<ul>
+					<li><a href=""> FAQ</a></li>
+					<li><a href="">Chăm sóc khách hàng</a></li>
+					<li><a href="">Vận chuyển và Đổi trả hàng</a></li>
+					<li><a href="">Liên hệ</a></li>
+				</ul>
+			</div>
+			<div class="social_network">
+				<h1>Thông tin</h1>
+				<p>Bóng chuyền là môn thể thao lâu đời và không bị phai nhòa theo thời gian.</p>
+				<div class="icon_social">
+					<div class="icon fix1"><a href="https://www.facebook.com/trungducbui.75.2001/"><i class="fa fa-facebook-f"></i></a></div>
+					<div class="icon fix2"><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-google"></i></a></div>
+					<div class="icon fix3"><a href="https://www.instagram.com/trungduc.b/"><i class="fa fa-instagram"></i></a></div>
+					<div class="icon fix4"><a href="https://www.facebook.com/trungducbui.75.2001/"><i class="fa fa-twitter"></i></a></div>
+				</div>
+			</div>
+			<!--Start of AutoAds Tracking Code-->
+<script id='autoAdsMaxLead-widget-script' src='https://cdn.autoads.asia/scripts/autoads-maxlead-widget.js?business_id=9CE6F03E98DE42D6A1626AF8FE05C585' type='text/javascript' charset='UTF-8' async></script>
+		</div>
+			<div class="license">&copy; Bản quyền thuộc về Trung Đức - Đức Thành !!! Ahihi.</div>
+				<div class="scroll-to-top scroll-to-target" style="display: block;">
+        	<i class="fa fa-angle-up"></i> 
+    	</div>
+      	<script>
+        	 var offset = 200;
+    		var duration = 500;
+    		$(window).scroll(function () {
+        	if ($(this).scrollTop() > offset) {
+            $('.scroll-to-top').fadeIn(400);
+        		} else {
+            $('.scroll-to-top').fadeOut(400);
+        	}
+   			 });
+    		$('.scroll-to-top').click(function (event) {
+        		event.preventDefault();
+        	$('html, body').animate({
+            scrollTop: 0
+        		}, 600);
+       		 return false;
+    		});
+    	</script>
+	</div>
+
+</body>
+</html>
